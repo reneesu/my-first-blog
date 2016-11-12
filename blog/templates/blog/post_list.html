@@ -6,16 +6,11 @@
         <div>
             <h1><a href="https://www.google.com">Renee's Blog</a></h1>
         </div>
-
+  {%for post in posts %}
         <div>
-            <p>Datum: 12.11.2016</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend felis eget sagittis facilisis. Pellentesque varius, ante sit amet tincidunt imperdiet, tortor purus dignissim sem, ac finibus erat mi id ligula. Donec eu urna massa. Sed a sem libero. Cras dapibus, dolor eget vestibulum congue, risus tortor tempor orci, quis congue nisi diam a urna. Vestibulum tincidunt facilisis nulla eu suscipit. Maecenas sit amet varius mi. Suspendisse vel nulla felis. Integer sem sem, lacinia at malesuada a, pretium eu dui. Morbi quis neque aliquam, ultrices ipsum ut, fermentum felis. Vestibulum nec tempus erat. Vivamus vitae quam leo. Vestibulum nec congue nulla, nec lobortis felis. Integer id mi quis mauris porttitor sagittis.</p>
+            {{posts}}
         </div>
-
-        <div>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+  {% endfor %}
+  
     </body>
 </html>
